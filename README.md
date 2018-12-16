@@ -83,7 +83,7 @@ $ cd your_project
 >
 > Untracked files: 没有放入暂存区
 >
->  Changes to be committed:  已经放入暂存区
+> Changes to be committed:  已经放入暂存区
 
 ```nginx
 $ git status
@@ -99,7 +99,7 @@ $ git log
 > Author: user.name <user.email>
 > Date:   Sun Dec 16 13:11:49 2018 +0800
 >
->     first commit  //提交的信息
+> first commit  //提交的信息
 
 
 
@@ -119,9 +119,9 @@ $ git log
 
   >  deleted:    index.html
   >
-  > Untracked files: homepage.html
+  >  Untracked files: homepage.html
   >
-  > Git以为进行了两步操作先删除index.html然后创建了一个新的homepage.html文件
+  >  Git以为进行了两步操作先删除index.html然后创建了一个新的homepage.html文件
 
 ```nginx
 $ git status
@@ -281,8 +281,7 @@ git cat-file -p 6ba2ecab847
 > git checkout commit_id   切换到某个没有分支的commit下，进行修改
 
 
+
 > 某个变更没有基于任何branch
 
 
-
-# git-summary
