@@ -285,3 +285,25 @@ git cat-file -p 6ba2ecab847
 > 某个变更没有基于任何branch
 
 
+
+#### HEAD 与 branch
+
+> HEAD
+>
+> - 指向分支的最新一次的修改
+> - 在分离头指针清空下，指向了某个commit上，没有和任何的分支挂钩
+
+- 创建并切换到新分支
+
+```nginx
+$ git checkout -b newbranch
+```
+
+![](assert/addbranch.png)
+
+![](assert/queryhead.png)
+
+
+
+#### 怎么删除不需要的分支
+
