@@ -327,9 +327,47 @@ $ git commit --amend
 
 #### 修改老旧的commit的message的信息
 
+> git rebase -i  -----> reword
+
+> 尚未提交到远端服务器的commit
+>
+> 变基时需要填父级 commit .那最老的父级是没有父级的，是不是就不可变基了？
+
 ```nginx
-$ git rebase -i commit_id
+$ git rebase -i prant_commit_id
 ```
 
+#### 连续的多个commit整理成一个
 
+> git rebase -i  ----->  squash
+
+```nginx
+$ git rebase -i prant_commit_id
+```
+
+#### 怎样把间隔的几个commit整理成一个？
+
+> 如果没有父类，在【-i】跳出的页面中，将pick添加上去
+>
+> git rebase -i  ----->  squash
+>
+> pick commit_id
+
+```nginx
+$ git rebase -i prant_commit_id
+```
+
+#### 比较暂存区和HEAD所含文件的差异
+
+> 需要加 --cached
+
+ ```nginx
+$ git diff --cached
+ ```
+
+#### 比较工作区和暂存区所含文件的差异
+
+```nginx
+
+```
 
