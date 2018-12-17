@@ -368,6 +368,24 @@ $ git diff --cached
 #### 比较工作区和暂存区所含文件的差异
 
 ```nginx
+$ git diff [-- file1 file2 .....]
+```
 
+#### 暂存区恢复成和HEAD的一样
+
+>  reset
+>
+>  - 不加 --hard，则暂存区的内容恢复成HEAD对应的内容，工作区的变更继续保留。
+>
+>  - 加了 --hard，则不管工作区还是暂存区，内容都变回HEAD对应的内容。  
+
+>  git reset 有三个参数
+>
+> - --soft 这个只是把 HEAD 指向的 commit 恢复到你指定的 commit，暂存区 工作区不变
+> - --hard 这个是 把 HEAD， 暂存区， 工作区 都修改为 你指定的 commit 的时候的文件状态
+> - --mixed 这个是不加时候的默认参数，把 HEAD，暂存区 修改为 你指定的 commit 的时候的文件状态，工作区保持不变
+
+```nginx
+$ git reset HEAD
 ```
 
