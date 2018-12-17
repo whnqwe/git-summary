@@ -307,3 +307,29 @@ $ git checkout -b newbranch
 
 #### 怎么删除不需要的分支
 
+```nginx
+$ git branch -d branch_name
+```
+
+![](assert/gitbranchd.png)
+
+
+
+#### 修改最新的commit的message的信息
+
+```nginx
+$ git commit --amend
+```
+
+![](assert/gitcommitamend.png)
+
+
+
+#### 修改老旧的commit的message的信息
+
+```nginx
+$ git rebase
+```
+
+
+
