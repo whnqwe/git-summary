@@ -328,7 +328,7 @@ $ git commit --amend
 #### 修改老旧的commit的message的信息
 
 ```nginx
-$ git rebase -i 
+$ git rebase -i commit_id
 ```
 
 
