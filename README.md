@@ -389,3 +389,56 @@ $ git diff [-- file1 file2 .....]
 $ git reset HEAD
 ```
 
+#### 工作区的文件恢复为和暂存区一样
+
+```nginx
+$ git checkout -- <file>
+```
+
+
+
+#### 取消暂存区部分文件的更改
+
+```nginx
+ git reset HEAD -- <file>
+```
+
+#### 消除最近的几次提交
+
+```nginx
+$ git reset --hard commit_id
+```
+
+
+
+#### 不同提交的指定文件的差异
+
+```nginx
+$ git diff brach_name1 branch_name2 -- file_name
+```
+
+#### 正确删除文件的方法
+
+```nginx
+$ git rm file_name
+```
+
+#### 开发中临时加塞了紧急任务的处理
+
+> 开发A任务的过程中，临时接到了很紧急的任务
+
+```nginx
+$ git stash 
+$ git stash apply
+$ git stash pop
+$ git stash list
+```
+
+#### 指定不需要Git管理的文件
+
+> https://github.com/github/gitignore/
+
+```nginx
+vi .gitignore
+```
+
